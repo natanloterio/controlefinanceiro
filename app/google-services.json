@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1096164867732",
+    "firebase_url": "https://controle-financeiro-18306.firebaseio.com",
+    "project_id": "controle-financeiro-18306",
+    "storage_bucket": "controle-financeiro-18306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096164867732:android:ad9c1a1ca97123ecdf3e81",
+        "android_client_info": {
+          "package_name": "me.loterio.controlefinanceiro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096164867732-bbdeicn7gi1be73fgc6ajo6u9sbu2ns1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.loterio.controlefinanceiro",
+            "certificate_hash": "7487d481849cc21524301c66f7dff6129e3de726"
+          }
+        },
+        {
+          "client_id": "1096164867732-c9iv4ikds5dml1rhlt4uq92ifroeg39v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.loterio.controlefinanceiro",
+            "certificate_hash": "632df08a82705da28cef50cf4e36f0bcfffe97e2"
+          }
+        },
+        {
+          "client_id": "1096164867732-si890a1k1i5b5mbc081serm8qhmqjek3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK9ayROuUoGB5qNOZivJi0v89TDajNh6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096164867732-si890a1k1i5b5mbc081serm8qhmqjek3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

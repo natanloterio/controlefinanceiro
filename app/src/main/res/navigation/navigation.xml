@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/costumerListFragment">
+
+    <fragment
+        android:id="@+id/costumerListFragment"
+        android:name="me.loterio.controlefinanceiro.ui.costumer.list.CostumerListFragment"
+        android:label="CostumerListFragment" >
+        <action
+            android:id="@+id/action_costumerListFragment_to_costumerDetailFragment"
+            app:destination="@id/costumerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/costumerDetailFragment"
+        android:name="me.loterio.controlefinanceiro.ui.costumer.detail.CostumerDertailFragment"
+        android:label="CostumerListFragment" >
+
+
+        <argument
+            android:name="costumerId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_costumerDetailFragment_to_editHistoryEntryFragment"
+            app:destination="@id/editHistoryEntryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editHistoryEntryFragment"
+        android:name="me.loterio.controlefinanceiro.ui.costumer.history.EditHistoryEntryFragment"
+        android:label="EditHistoryEntryFragment" >
+        <argument
+            android:name="costumerId"
+            app:argType="string" />
+        <argument
+            android:name="historyEntryId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
