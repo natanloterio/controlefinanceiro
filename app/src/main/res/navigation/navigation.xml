@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/costumerListFragment"
         android:name="me.loterio.controlefinanceiro.ui.costumer.list.CostumerListFragment"
-        android:label="CostumerListFragment" >
+        android:label="@string/costumer_list" >
         <action
             android:id="@+id/action_costumerListFragment_to_costumerDetailFragment"
             app:destination="@id/costumerDetailFragment" />
@@ -16,7 +16,7 @@
     <fragment
         android:id="@+id/costumerDetailFragment"
         android:name="me.loterio.controlefinanceiro.ui.costumer.detail.CostumerDertailFragment"
-        android:label="CostumerListFragment" >
+        android:label="@string/costumer_detail" >
 
 
         <argument
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/editHistoryEntryFragment"
         android:name="me.loterio.controlefinanceiro.ui.costumer.history.EditHistoryEntryFragment"
-        android:label="EditHistoryEntryFragment" >
+        android:label="@string/history" >
         <argument
             android:name="costumerId"
             app:argType="string" />

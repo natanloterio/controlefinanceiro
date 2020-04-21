@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
-import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -16,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import com.android.billingclient.api.*
-import kotlinx.android.synthetic.main.costumer_detail.tieHoras
+import kotlinx.android.synthetic.main.costumer_detail.tieAddress
 import kotlinx.android.synthetic.main.edit_history_entry.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -59,7 +58,7 @@ class EditHistoryEntryFragment : Fragment(), PurchasesUpdatedListener {
             val currencyFormat = NumberFormat.getCurrencyInstance()
 
             tieDate.setText(simpleDateFormat.format(it.date))
-            tieHoras.setText(it.horas.toString())
+            tieAddress.setText(it.horas.toString())
             tieFaturado.setText(it.faturado.toString())
             tieAReceber.setText(it.aReceber.toString())
         }
@@ -69,7 +68,7 @@ class EditHistoryEntryFragment : Fragment(), PurchasesUpdatedListener {
         btnSaveHistory.setOnClickListener(View.OnClickListener {
             val df = SimpleDateFormat("dd/MM/yyyy")
             val date = df.parse(tieDate.text.toString())
-            val horas = (tieHoras.text.toString()).toFloat()
+            val horas = (tieAddress.text.toString()).toFloat()
             val faturado = BigDecimal(tieFaturado.text.toString()).toFloat()
             val aReceber = BigDecimal(tieAReceber.text.toString()).toFloat()
 

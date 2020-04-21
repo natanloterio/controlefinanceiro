@@ -18,7 +18,6 @@ import kotlinx.coroutines.withContext
 import me.loterio.controlefinanceiro.R
 import me.loterio.controlefinanceiro.data.model.Costumer
 import me.loterio.controlefinanceiro.data.model.HistoryEntry
-import me.loterio.controlefinanceiro.ui.utils.MyMaskEditText
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -43,7 +42,7 @@ class CostumerDertailFragment : Fragment(), PurchasesUpdatedListener {
         val costumerObserver = Observer<Costumer> {
 
             tieDate.setText(it.name)
-            tieHoras.setText(it.address)
+            tieAddress.setText(it.address)
             tiePhone.setText(it.phone)
         }
 
@@ -68,7 +67,7 @@ class CostumerDertailFragment : Fragment(), PurchasesUpdatedListener {
 
     private fun saveData() {
         val name = tieDate.text.toString()
-        val address = tieHoras.text.toString()
+        val address = tieAddress.text.toString()
         val phone = tiePhone.text.toString()
         viewModel.writeCostumer(name, address, phone)
     }
